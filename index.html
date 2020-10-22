@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"> 
+<head>
+   <meta charset="utf-8">
+	<title>Movie List</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+   <link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/media-queries.css">         
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="js/modernizr.js"> </script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>   
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/waypoints.js"></script>  
+   <script src="js/main.js"></script>
+
+
+	<link rel="shortcut icon" href="index.png" >
+   <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
+   
+      .form-popup {
+        display: none;
+        position:fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+      }
+
+      .form-container {
+        max-width: 450px;
+        padding: 50px;
+        padding-bottom: 5px;
+        background-color: white;
+      }
+      
+      .form-container input[type=text], .form-container input[type=text] , .form-container input[type=text],.form-container input[type=image]{
+        width: 100%;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+      }
+ 
+      .form-container input[type=text]:focus, .form-container input[type=text]:focus ,.form-container input[type=text]:focus,.form-container input[type=image]:focus{
+        background-color: #ddd;
+        outline: none;
+      }
+   
+      .form-container .btn:hover, .open-button:hover {
+         background: #f26522;
+        opacity: 1;
+      }
+      .p1{
+        margin:auto;
+        display:block; }
+           .p1:hover {
+         background-color: #ed650a;
+      }
+      .p2:hover {
+         background-color: #ed650a;
+      }
+      .p3:hover {
+         background-color: #ed650a;
+      }
+            .p2{
+              margin:auto;
+              display:block;      
+                  }
+                  .p3{
+              margin:auto;
+              display:block;
+                  }
+      </style>
+</head>
+<body class="homepage">
+ 
+   <div id="preloader"> 
+	   <div id="status">
+         
+      </div>
+   </div>
+
+   <header id="main-header">
+
+   	<div class="row header-inner">
+
+	      <div class="logo">
+	         <a class="smoothscroll" href="#hero">MyTime</a>
+	      </div>
+
+	      <nav id="nav-wrap">         
+	         
+	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+	         	<span class='menu-text'>Show Menu</span>
+	         	<span class="menu-icon"></span>
+	         </a>
+         	<a class="mobile-btn" href="#" title="Hide navigation">
+         		<span class='menu-text'>Hide Menu</span>
+         		<span class="menu-icon"></span>
+         	</a>         
+
+	         <ul id="nav" class="nav">
+               <li><a class="smoothscroll" style="background-color: black; position: left;">MyTime</a></li>
+	            <li class="current"><a class="smoothscroll" href="#hero">Home.</a></li>
+		         <li><a class="smoothscroll"  href="#portfolio">Search</a></li>
+	            <li><a class="smoothscroll" href="#services">Add</a></li>
+	                      
+	            <li><a class="smoothscroll" href="#contact">Contact.</a></li>
+	         </ul> 
+	      </nav>	      
+	   </div> 
+   </header> 
+
+   <section id="hero">	
+   	  
+		<div >
+         <div class="container1" >
+            <div id="answe" style="padding-right: 8px " >
+               <img src="images/hp.jpg" width="450" height="320" style="padding-left: 70px">
+
+               <button type="button" class="p1" onclick="plot()">Plot/Synonpsis</button>
+               <p id="texto" style="color:white; font-size:20px"></p>
+            </div>
+            <div id="answ" style="padding-right: 8px">
+               <img src="images/bt.jpg" width="450" height="320" style="padding-left: 70px" >
+               <button type="button" class="p2" onclick="plot1()">Plot/Synonpsis</button>
+               <p id="textb" style="color:white; font-size:20px"></p>
+            </div>
+            <div id="app" >
+               <img src="images/lg.jpg" width="450" height="320" style="padding-left: 70px" >
+               <button type="button" class="p3" onclick="plot2()" >Plot/Synonpsis</button>
+               <p id="textl" style="color:white; font-size:20px"></p>
+            </div>
+            <script>
+               function plot()
+               {
+                  document.getElementById('texto').innerHTML = "With their warning about Lord Voldemort's (Ralph Fiennes') return scoffed at, Harry (Daniel Radcliffe) and Dumbledore (Sir Michael Gambon) are targeted by the Wizard authorities as an authoritarian bureaucrat slowly seizes power at Hogwarts.";
+               }
+               function plot1()
+               {
+                  document.getElementById('textb').innerHTML = "BTS: Burn The Stage is a YouTube Red original series consisting 8 episodes in one season. The documentary- style show revolves around the 7 member South Korean idol group BTS, who have become the hottest band in the world.";
+               }
+               function plot2()
+               {
+                  document.getElementById('textl').innerHTML = "An ordinary LEGO construction worker, thought to be the prophesied as special, is recruited to join a quest to stop an evil tyrant from gluing the LEGO universe into eternal stasis.";
+               }
+            
+            </script>
+           </div>
+      </div>
+			
+   </section>
+   <section id="portfolio">
+      <div class="row section-head">
+      	<div class="twelve columns">
+	         <h2>Search For Movies<span>.</span></h2>
+	         <hr />
+	      </div>
+      </div>
+
+      <div class="row items">
+      	<div class="twelvecolumns">
+		<form name="login" method="POST" action="" id="form">
+			
+			<input size="50" class="center-block" style="font-size:21px;" placeholder="Enter the Movie Name" onkeyup="getanswer(document.getElementById('qurybox').value)" id="qurybox">
+         <div class="container">
+            <div id="answer" >
+            </div>
+            <div id="answer1" ></div>
+            <div id="answer2" ></div>
+           </div>
+            
+           <script type="text/javascript" > 
+           var data,data1,data2;
+      
+           function getanswer(q){
+           
+           $.get("https://www.omdbapi.com/?s="+q+"&apikey=ba1f4581", function(rawdata){
+           var rawstring =JSON.stringify(rawdata);
+           var rawstring1 =JSON.stringify(rawdata);
+           var rawstring2 =JSON.stringify(rawdata);
+           
+           data =JSON.parse(rawstring);
+           data1 =JSON.parse(rawstring1);
+           data2 =JSON.parse(rawstring2);
+
+           var title = data.Search[0].Title;
+           var year = data.Search[0].Year; 
+   
+           var title1 = data1.Search[1].Title;
+           var year1 = data1.Search[1].Year; 
+           var posterurl1=data1.Search[1].Poster;
+   
+           var title2 = data2.Search[2].Title;
+           var year2 = data2.Search[2].Year; 
+           var posterurl2=data2.Search[2].Poster;
+           
+           var imdburl="https://www.imdb.com/title/"+data.Search[0].imdbID+"/";
+           var imdburl1="https://www.imdb.com/title/"+data.Search[1].imdbID+"/";
+           var imdburl2="https://www.imdb.com/title/"+data.Search[2].imdbID+"/";
+           
+           var posterurl =data.Search[0].Poster;
+           document.getElementById('answer').style.textAlign = "center";
+           document.getElementById('answer1').style.textAlign = "center";
+           document.getElementById('answer2').style.textAlign = "center";
+           document.getElementById('answer').innerHTML="<h1>"+title+"</h1> <img src= '"+posterurl+"'><p> Year Released:"+year+"</p>  <p> IMDB page: <a href='"+imdburl+"'target='_blank'>"+imdburl+"</a></p>"; 
+           document.getElementById('answer1').innerHTML="<h1>"+title1+"</h1> <img src= '"+posterurl1+"'><p> Year Released:"+year1+"</p>  <p> IMDB page: <a href='"+imdburl1+"'target='_blank'>"+imdburl1+"</a></p>"; 
+           document.getElementById('answer2').innerHTML="<h1>"+title2+"</h1> <img src= '"+posterurl2+"'><p> Year Released:"+year2+"</p>  <p> IMDB page: <a href='"+imdburl2+"'target='_blank'>"+imdburl2+"</a></p>"; 
+         });
+          }
+         </script>
+            
+          </div>
+			
+		</form></a>
+</div>
+          		</div> 
+            </div> 
+         </div>
+      </div>  
+   </section> 
+   <section id="services">
+   	<div class="row section-head">
+   		<div class="twelve columns">
+
+	         <h2>Add New Movies<span>.</span></h2>
+
+	         <hr />
+         </div>
+
+      </div>
+
+
+<div class="form-popup" id="myForm" >
+  <form action=""  class="form-container" onsubmit="return false">
+    <h1>Enter Movie Details</h1>
+
+    <input type="text" placeholder="Movie Name" size=15 id="nm" required>
+
+    <input type="text" placeholder="Movie Language"  id="lang" required>
+
+    <input type="text" placeholder="Year Released"  id="year" required>
+    <p><input type="file"  accept="image/*"  id="file"  onchange="loadFile(event)" style="display: none;" required></p>
+<p><label for="file" style="cursor: pointer;"> + Upload Movie Poster</label></p>
+<p><img id="output" width="150" /></p>
+
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+
+    <button type="button1" class="btn" size="20" onclick="showInput() ">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+      	<div class="twelve columns"></div>
+		<form name="Submit" action="" id="form-poup" >
+         
+			<div class="popup" onclick="openForm()">+ Click here 
+            
+			  </div> 
+			  <script>
+				
+               function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+  
+}
+            </script>
+       <script >
+         function showInput() {
+            
+            var name=document.getElementById("nm").value;
+            var lang=document.getElementById("lang").value;
+            var year= document.getElementById("year").value;
+
+
+             document.getElementById('display').innerHTML = 
+             " <p> <h2> Newly Added Movie :</h2> </p><p> Movie Name:"+name+"</p> <p> Movie Language: "+lang+"</p> <p> Year Released: "+year+"</p> ";
+             onchange=loadFile(event);
+         }
+       </script>
+
+ <p><span id='display'></span></p>
+		</form></a>
+</div>
+	            </div> 
+	      	</div>
+	      </div> 
+      </div>     
+   </section>   
+   <section id="contact">
+   <footer>
+
+      <div class="row">       
+
+         <div class="six columns tab-whole footer-about">
+				
+				<h3>About My Time</h3>
+               
+            <p>A website to help you find your favorite Movies... </p>  
+         </div> 
+         <div class="six columns tab-whole right-cols">
+
+            <div class="row">
+
+               <div class="columns">
+                  <h3 class="address"> Our Contacts </h3>
+                  <p>
+                     Borivali west
+                     Mumbai -400067
+                     </p>
+   
+                     <ul>
+                       <li>852213232</a></li>
+                       <li>MyTime.12@gmail.com</a></li>
+                     </ul>                  
+               </div>            
+            </div> 
+         </div>
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero"><span>Top</span><i class="fa fa-long-arrow-up"></i></a>
+         </div>
+      </div> 
+   </section>   
+
+   </footer> 
+   
+</body>
+</html>
